@@ -1,0 +1,54 @@
+{# templates/components/table_body.j2 #}
+
+<style>
+    #report td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        text-align: center;
+        font-style: italic;
+        line-height: normal;
+    }
+
+    #report td:first-child {
+        text-align: left;
+    }
+
+</style>
+<tr id="report">
+    <div>
+        {% if data["libur"] %}
+            <td colspan="3" style="text-align: center;">
+                <span>{{ data["tanggal"] }}</span><br/>
+                <b>Libur</b>
+            </td>
+        {% else %}
+            <td>
+                <span>{{ data["tanggal"] }}</span><br/>
+                <br/>
+                <span><b>Uraian Kegiatan Berisi:</b></span><br/>
+                <span><b>&ensp; Kegiatan:</b></span><br/>
+                {% for kegiatan in data["deskripsi"]["kegiatan"] %}
+                    <span>&ensp;&ensp; o {{ kegiatan }}</span><br/>
+                {% endfor %}
+                <span><b>&ensp; Hasil Kegiatan:</b></span><br/>
+                {% for hasil in data["deskripsi"]["hasil"] %}
+                    <span>&ensp;&ensp; o {{ hasil }}</span><br/>
+                {% endfor %}
+                <span><b>&ensp; Pengalaman Belajar (softskill):</b></span><br/>
+                {% for softskill in data["deskripsi"]["pengalaman"]["softskill"] %}
+                    <span>&ensp;&ensp; o {{ softskill }}</span><br/>
+                {% endfor %}
+                <span><b>&ensp; Pengalaman Belajar (hardskill):</b></span><br/>
+                {% for hardskill in data["deskripsi"]["pengalaman"]["hardskill"] %}
+                    <span>&ensp;&ensp; o {{ hardskill }}</span><br/>
+                {% endfor %}
+            </td>
+            <td>
+                <img src="static/{{ data['bukti'] }}" width="100%">
+            </td>
+            <td>
+                <img src="static/ttd.jpg" width="100%">
+            </td>
+        {% endif %}
+    </div>
+</tr>
