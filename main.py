@@ -45,7 +45,8 @@ def to_text():
                 result += f"&ensp;&ensp;o {hardskill}<br/>"
             
             result += "<b>Dokumentasi:</b><br/>"
-            result += "&ensp;&ensp;<img src='static/{}' width='50%'><br/>".format(data["bukti"])
+            for bukti in data["bukti"]:
+                result += "&ensp;&ensp;<img src='static/{}' width='50%'><br/>".format(bukti)
             result += "<br/><br/><br/>"
         
         response = make_response(result, 200)

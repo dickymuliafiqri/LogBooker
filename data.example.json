@@ -13,9 +13,9 @@
   "tanggal_laporan": "08 April 2023",
   "laporan": [
     {
-      "tanggal": "03 April 2023",
+      "tanggal": "09 April 2023",
       "libur": false,
-      "bukti": "1.png",
+      "bukti": ["1.png"],
       "deskripsi": {
         "kegiatan": ["Pembuatan layanan untuk membuat logbook secara otomatis"],
         "hasil": [
@@ -36,9 +36,9 @@
       }
     },
     {
-      "tanggal": "04 April 2023",
+      "tanggal": "10 April 2023",
       "libur": false,
-      "bukti": "2.png",
+      "bukti": ["2.png"],
       "deskripsi": {
         "kegiatan": ["Perbaikan bug pada layanan pembuat logbook otomatis"],
         "hasil": ["Layanan yang lebih stabil"],
@@ -52,9 +52,9 @@
       }
     },
     {
-      "tanggal": "05 April 2023",
+      "tanggal": "11 April 2023",
       "libur": false,
-      "bukti": "3.png",
+      "bukti": ["3.png"],
       "deskripsi": {
         "kegiatan": ["Implementasi flask sebagai web server sederhana"],
         "hasil": ["Website dengan dengan Flask sebagai backend"],
@@ -68,9 +68,9 @@
       }
     },
     {
-      "tanggal": "06 April 2023",
+      "tanggal": "12 April 2023",
       "libur": false,
-      "bukti": "4.png",
+      "bukti": ["4.png"],
       "deskripsi": {
         "kegiatan": ["Implementasi Jinja2 sebagai templating engine"],
         "hasil": ["Pemahaman cara kerja templating engine"],
@@ -84,9 +84,9 @@
       }
     },
     {
-      "tanggal": "07 April 2023",
+      "tanggal": "13 April 2023",
       "libur": false,
-      "bukti": "5.png",
+      "bukti": ["5.png"],
       "deskripsi": {
         "kegiatan": [
           "Belajar dasar penggunaan beautifulsoup4 untuk melakukan web scraping",
@@ -103,7 +103,7 @@
       }
     },
     {
-      "tanggal": "08 April 2023",
+      "tanggal": "14 April 2023",
       "libur": true
     }
   ]

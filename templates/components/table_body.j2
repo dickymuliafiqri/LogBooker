@@ -30,7 +30,9 @@
                 {% endfor %}
             </td>
             <td>
-                <img src="static/{{ data['bukti'] }}" width="100%">
+                {% for bukti in data["bukti"] %}
+                    <img src="static/{{ bukti }}" width="100%">
+                {% endfor %}
             </td>
             <td>
                 <img src="static/ttd.jpg" width="100%">
